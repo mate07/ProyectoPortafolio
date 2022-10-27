@@ -1,0 +1,38 @@
+﻿@{
+    DateTime hoy = DateTime.Now;
+}
+
+<div class="text-center">
+    <i class="bi bi-pc-display" style="color: red; font-size: 50px;"></i>
+    <h1 class="display-4">Soy @Model.Nombre</h1>
+    <h3>Edad: @Model.Edad</h3>
+    <h3>Profesion: @Model.Profesion</h3>
+    <h3>Graduado de: @Model.lugarUni</h3>
+
+    <h3> Soy Desarrollador de Apps para Ambiente Web </h3>
+    <h3>Tecnologías de Desarrollo: PHP, Framework Yii, MySQL</h3>
+
+    <img id="foto"
+         src="~/imagenes/logo.png" alt="Logo Vladimir Mate" />
+
+    <h5>@hoy.ToString("dd/MM/yy HH:mm:ss")</h5>
+</div>
+
+<div class="text-center">
+    <img id="imagen-aspnet"
+         src="~/imagenes/logo-asp.jpg" alt="Logo ASP.NET Core" />
+</div>
+
+<div class="row justify-content-center text-center bg-success">
+    <div class="col col-md7 seccion-bienvenida">
+        <h2>Te doy la bienvenida a mi portafolio</h2>
+        <p>
+            Graduado de la Univerdidad Politécnica del El Salvador, llevamos ejerciendo la
+            profesion desde hace 5 años, durante 3 años nos dedicamos al desarrollo Freelancer,
+            creando proyectos a la medida para el ambiente web, utilizando el lengueje de
+            programcion PHP, con el framework YII.
+
+            Actualmente estamos dedicados al rubro bancario, entre otras actividades profesionales
+        </p>
+    </div>
+</div>
