@@ -24,3 +24,7 @@ C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\
 C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\obj\Debug\net6.0\ProyectoPortafolio.pdb
 C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\obj\Debug\net6.0\ProyectoPortafolio.genruntimeconfig.cache
 C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\obj\Debug\net6.0\ref\ProyectoPortafolio.dll
+C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\bin\Debug\net6.0\SendGrid.dll
+C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\Jehova Shalom\Documents\Visual Studio 2022\Projects\ProyectoPortafolio\obj\Debug\net6.0\ProyectoPortafolio.csproj.CopyComplete

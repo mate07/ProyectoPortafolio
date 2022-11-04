@@ -1,7 +1,11 @@
+using ProyectoPortafolio.Servicios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//Agregar esta linea
+builder.Services.AddTransient<IServicioEmail, ServicioEmailSendGrid>();
 
 var app = builder.Build();
 

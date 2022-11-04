@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProyectoPortafolio.Models;
+using ProyectoPortafolio.Servicios;
 using System.Diagnostics;
 
 namespace ProyectoPortafolio.Controllers
@@ -8,10 +8,13 @@ namespace ProyectoPortafolio.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IServicioEmail servicioEmail;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,
+               IServicioEmail servicioEmail)
         {
             _logger = logger;
+            this.servicioEmail = servicioEmail;
         }
 
         public IActionResult Index()
@@ -39,8 +42,9 @@ namespace ProyectoPortafolio.Controllers
         }
 
         [HttpPost]
-        public IActionResult Contacto(Contacto contacto)
+        public async Task<IActionResult> Contacto(Contacto contacto)
         {
+            await servicioEmail.Enviar(contacto);
             return RedirectToAction("Gracias");
         }
 
